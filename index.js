@@ -6,6 +6,12 @@ app.get("/",(req,res)=>{
         message: "success"
     })
 })
+app.get("/hello",(req,res)=>{
+    res.status(200).json({
+        message: "Hello"
+    })
+})
+
 
 app.listen(5000,(err)=>{
     if(err){
